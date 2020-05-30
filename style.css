@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	font-family: 'Libre Franklin', sans-serif;
+	color: hsl(0, 0%, 59%);
+}
+.container {
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+}
+header {
+	margin-top: 1.5rem;
+}
+.information {
+	margin-top: 2.5rem;
+	font-size: 36px;
+}
+.bold {
+	font-weight: 700;
+	color: black;
+}
+.information2 {
+	margin-top: 1rem;
+	color: black;
+	font-size: 15px;
+}
+.subscribe-form {
+	margin-top: 1.5rem;
+}
+.subscribe-form input {
+	border-radius: 50px;
+	padding: 12px 12px 12px 20px;
+	border: 1px solid hsl(223, 100%, 88%);
+	opacity: 1;
+	width: 18rem;
+	outline: none;
+	margin-right: 15px;
+}
+.subscribe-form input::placeholder {
+	color: hsl(223, 100%, 88%);
+}
+.subscribe-form button {
+	height: 41px;
+	color: #fff;
+	background-color: hsl(223, 87%, 63%); 
+	border: none;
+	border-radius: 50px;
+	width: 9rem;
+	font-weight: 600;
+	outline: none;
+	box-shadow: -1px 0px 22px -8px rgba(79,125,243,1);
+	font-size: 12px;
+	transition: 0.5s;
+}
+button:hover {
+	cursor: pointer;
+	background-color: hsl(223, 87%, 70%);
+}
+.dashboard {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+}
+.dashboard img {
+	width: 32rem;
+}
+.favicons {
+	margin-top: 5rem;
+	color: hsl(223, 87%, 63%);
+	margin-left: -55px;
+}
+.favicons ol li {
+	border-radius: 50%;
+	border: 1px solid hsl(0, 0%, 90%);
+	padding: 8px;
+	margin: 5px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+.favicons ol li:hover {
+	background-color: hsl(223, 87%, 63%);
+	color: white;
+	cursor: pointer;
+}
+.copyright {
+	font-size: 12px;
+	margin-left: -15px;
+}
+.error {
+	position: absolute;
+	color: hsl(354, 100%, 66%);
+	font-size: 11px;
+	font-style: italic;
+	margin-left: 25px;
+	margin-top: 3px;
+}
+@media (max-width: 535px) {
+  .information {
+      font-size: 28px;
+  }
+  .subscribe-form {
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+  }
+  .subscribe-form button {
+  	margin-top: 15px;
+  	width: 20.3rem;
+  }
+  .error {
+  	position: relative;
+  	text-align: center;
+  	margin-left: -30px;
+  }
+  .dashboard img {
+  	width: 21rem;
+  }
+}
